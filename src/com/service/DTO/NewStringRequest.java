@@ -1,4 +1,4 @@
-package com.Mihnea.DTO;
+package com.service.DTO;
 
 public class NewStringRequest {
     private String inputString;

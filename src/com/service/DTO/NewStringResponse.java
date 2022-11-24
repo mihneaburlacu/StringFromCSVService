@@ -1,4 +1,4 @@
-package com.Mihnea.DTO;
+package com.service.DTO;
 
 public class NewStringResponse {
     private String outputString;
@@ -21,6 +21,7 @@ public class NewStringResponse {
 
     @Override
     public String toString() {
-        return "output_example: \n" + this.outputString;
+        String sep = "----------------------------------------------------\n";
+        return "output_example: \n" + sep + this.outputString + sep;
     }
 }

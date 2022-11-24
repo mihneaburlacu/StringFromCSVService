@@ -1,8 +1,8 @@
-package com.Mihnea.impl;
+package com.service.impl;
 
-import com.Mihnea.DTO.NewStringRequest;
-import com.Mihnea.DTO.NewStringResponse;
-import com.Mihnea.intf.NewStringInterace;
+import com.service.DTO.NewStringRequest;
+import com.service.DTO.NewStringResponse;
+import com.service.intf.NewStringInterace;
 
 import java.util.*;
 
@@ -41,6 +41,7 @@ public class NewString implements NewStringInterace {
             for(String text : map.get(s)) {
                 sb.append(text + "\n");
             }
+            sb.append("\n");
         }
         responseNewString.setOutputString(sb.toString());
 
