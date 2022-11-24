@@ -1,3 +1,5 @@
+package com.service.start;
+
 import com.service.DTO.NewStringRequest;
 import com.service.impl.NewString;
 import com.service.impl.ReadFromFile;
