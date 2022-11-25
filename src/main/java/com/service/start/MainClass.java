@@ -17,6 +17,10 @@ public class MainClass {
 
         //request.setInputString("full_name, email, location\nAnita, anita@email.com, California\nAron, aron.bla@email.com, California\nAron, aron.bla@email.com, California\nCosmin, kox@bla.com, Giurgiu\nCrina, ggl@test.com, Letcani\nBogdan, vox@example.com, Resita");
         request.setInputString(text);
+
+        String sep = "----------------------------------------------------\n";
+        System.out.println("output_string:\n" + sep);
         System.out.println(newString.service(request).toString());
+        System.out.println(sep);
     }
 }

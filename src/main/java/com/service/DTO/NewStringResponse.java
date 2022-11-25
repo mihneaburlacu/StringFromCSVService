@@ -1,5 +1,7 @@
 package com.service.DTO;
 
+import java.util.Objects;
+
 public class NewStringResponse {
     private String outputString;
 
@@ -20,8 +22,15 @@ public class NewStringResponse {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        NewStringResponse that = (NewStringResponse) o;
+        return Objects.equals(outputString, that.outputString);
+    }
+
+    @Override
     public String toString() {
-        String sep = "----------------------------------------------------\n";
-        return "output_example: \n" + sep + this.outputString + sep;
+        return this.outputString;
     }
 }
